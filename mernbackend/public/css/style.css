@@ -1,0 +1,12 @@
+h1{
+    color: blue;
+}
+#box{
+    background-color:bisque;
+    margin:auto;
+    width: 500px;
+    padding: 40px;
+    border-radius: 7px;
+    border: 2px;
+    box-shadow:5px;
+ }

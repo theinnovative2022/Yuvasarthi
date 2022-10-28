@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   {{>header}}
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+{{>navbar}}
+
+    <style type="text/css">
+     #text{
+        height:25px;
+        border-radius:5px;
+        padding:4px;
+        border:solid thin #aaa;    
+        width: 100%;
+     }
+     #button{
+        padding: 10px;
+        width: 100px;
+        color:white;
+        background-color:lightblue;
+        border:none;
+     }
+     #box{
+        background-color:grey;
+        margin:auto;
+        width: 300px;
+        padding: 25px;
+     }
+    </style>
+    <div id="box">
+     <form action="/login" method="POST">
+        <div style="font: size 20px;margin: 10px; color:white;">Login</div>
+
+        <input id="text" type="text" name="email"><br><br>
+        <input id="text" type="password" name="password"><br><br>
+
+        <input  id="button" type="submit" value="Signup"><br><br>
+
+        <a href="/register">Click to Register</a><br><br>
+     </form>
+    </div>
+</body>
+</html>

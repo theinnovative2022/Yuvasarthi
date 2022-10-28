@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+    <title>Document</title>
+</head>
+
+<body>
+    {{>navbar}}
+
+
+    <div class="w-50 text-center bg-light p-1 rounded-5 shadow-lg mt-5 container" id="box">
+
+        <form action="/register"method="POST">
+            <div style="font-size: 20px;margin: 10px;color: black;">registration form</div>
+
+            <input id="text" type="text" name="firstname" placeholder="Enter Your first name"><br><br>
+            <input id="text" type="text" name="lastname" placeholder="Enter Your last name"><br><br>
+            <input id="text" type="text" name="email" placeholder="Enter Your Email"><br><br>
+            <div class="form-group">
+
+                <div class="max1"> <label class="radio inline"> <input type="radio" name="gender" value="male" checked>
+                        <span> Male </span> </label> <label class="radio inline"> <input type="radio" name="gender"
+                            value="female"> <span>Female </span> </label> 
+
+                </div>
+
+            </div>
+            <input id="text" type="text" name="age" placeholder="Enter Your age"><br><br>
+            <input id="text" type="text" name="phone" placeholder="Enter Your number"><br><br>
+            <input id="text" type="password" name="password" placeholder="Password"><br><br>
+        <input id="text" type="password" name="confirmpassword" placeholder="confirm Password"><br><br>
+
+            <input style="font-size: 18px;margin: 10px;color: black;"" id="button" type="submit" value="register" class="Register"><br><br>
+        </form>
+    </div>
+</body>
+
+</html>
